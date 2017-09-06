@@ -24,3 +24,6 @@ for (var value in person){
 }
 console.log(Object.keys(person) instanceof Array);//todo 遍历对象可枚举的属性(对象本身的，不包含原型上的),将遍历的属性名存放在数组中。
 console.log(JSON.stringify(person));//todo 将对象可枚举的属性转换为JSON格式(对象本身的，不包含原型上的);
+for (var key of Object.keys(person)){
+    console.log(key,person[key]);
+}
